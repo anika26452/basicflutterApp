@@ -22,7 +22,7 @@ class _CalculatorState extends State<Calculator> {
     return Scaffold(
       appBar: AppBar(
           title: const Text(
-        "Calculator",
+        "Functions",
       )),
       body: Center(
           child: Column(children: [
@@ -68,7 +68,7 @@ class _CalculatorState extends State<Calculator> {
         ),
         GestureDetector(
           onTap: () {
-            Utils.showToast("Multiplication");
+            Utils.showToast("Location");
             Get.to(LocationPage());
           },
           child: Container(
@@ -76,7 +76,7 @@ class _CalculatorState extends State<Calculator> {
             height: 50,
             child: Center(
                 child: const Text(
-              "Multiplication *",
+              "Location ",
               style: TextStyle(color: Colors.white),
             )),
             decoration: BoxDecoration(color: Colors.blueGrey[900]),
@@ -87,7 +87,7 @@ class _CalculatorState extends State<Calculator> {
         ),
         GestureDetector(
           onTap: () {
-            Utils.showToast("Division");
+            Utils.showToast("Image Picker");
             Get.to(ImageLoad());
           },
           child: Container(
@@ -95,7 +95,7 @@ class _CalculatorState extends State<Calculator> {
             height: 50,
             child: Center(
                 child: const Text(
-              "Divisions /",
+              "Image Picker",
               style: TextStyle(color: Colors.white),
             )),
             decoration: BoxDecoration(color: Colors.blueGrey[900]),
